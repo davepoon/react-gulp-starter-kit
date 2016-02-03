@@ -1,5 +1,5 @@
 {
-  "name": "adslot-test",
+  "name": "react-gulp-starter-kit",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,20 +8,22 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.1.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
     "browserify": "^9.0.3",
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
-    "gulp-react": "^3.0.1",
     "gulp-sass": "^2.0.1",
     "gulp-server-livereload": "1.3.0",
-    "gulp-util": "^3.0.4",
+    "gulp-util": "^3.0.7",
     "gulp-watch": "^4.2.4",
-    "node-notifier": "^4.2.1",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3",
-    "reactify": "^1.1.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^2.4.0"
-  },
-  "devDependencies": {}
+  }
 }
