@@ -1,40 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 
-$adslot-media-font-family: 'Roboto', sans-serif;
+$primary-font-family: 'Roboto', sans-serif;
 
+// React Colour
+$react-color: #00d8ff;
+$react-heading-color: #61dafb;
 
 // Page
-$body-background-color: #FBFBFB;
-
-// Adslot Home link
-$home-border-color: #8C8C8C;
-$home-color: #808285;
-$home-link-hover-color: #231F20;
-
-// Alert Message
-$alert-message-font-color: #919395;
-$alert-message-border-color: #D0D1D2;
+$body-background-color: #2d2d2d;
 
 // Header
 $header-background-color: #fff;
-
-// Search
-$search-button-color: #808285;
-$site-list-link-color: #006DCC;
-$site-list-description-color: #6D6F70;
 
 // Footer
 $footer-background-color: #231F20;
 $footer-hr-color: #58595B;
 $footer-nav-color: #919395;
 
-// Placeholder
-$placeholder-color: #A6A8AB;
-
 
 body {
   background: $body-background-color;
-  font-family: $adslot-media-font-family;
+  font-family: $primary-font-family;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 .header {
@@ -45,89 +31,48 @@ body {
   display: block;
   padding: 1.7rem 0;
   float: left;
+  img {
+    width: 36px;
+    margin: 0 4px 4px 0;
+  }
   a {
-    background: url('./images/adslot-media-logo.svg') no-repeat 0 0;
-    background-size: 115px;
     width: 115px;
-    height: 20px;
+    height: 30px;
     display: block;
+    color: $react-color;
+    display: inline-block;
+    font-size: 24px;
+    &:hover {
+      text-decoration: none;
+    }
   }
-}
-.adslot-home {
-  display: inline-block;
-  float: right;
-  border: 1px solid $home-border-color;
-  color: $home-color;
-  padding: 2px 3px 0px 3px;
-  margin: 14px 0;
-  cursor: pointer;
-  &:visited {
-    color: $home-color;
-  }
-  &:hover, &:active, &:focus {
-    color: $home-link-hover-color;
-    border-color: $home-link-hover-color;
-  }
-}
-.search-bar {
-  position: relative;
 }
 
-.search-bar-input {
-  font-size: 30px;
-  font-weight: lighter;
-  width: 100%;
-  padding: 0.9rem 5rem 0.9rem 1.2rem;
-  margin: 2rem 0;
-}
-.search-button {
-  font-size: 25px;
-  border-radius: 2px;
-  min-width: 26px;
-  color: $search-button-color;
-  padding: 0 0.64em;
-  height: auto;
-  min-height: 1.8em;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  line-height: 1.5;
-  background-color: transparent;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  border: none;
-  outline: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  cursor: default;
-}
-
-.alert-message {
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid $alert-message-border-color;
-  font-size: 20px;
-  background: none;
-  color: $alert-message-font-color;
-  font-weight: lighter;
-}
-
-.site-list-row {
-  margin: 2rem 0;
-}
-.site-list-link {
-  font-size: 18px;
-  color: $site-list-link-color;
-  text-decoration: underline;
-  &:hover, &:active {
-    color: $site-list-link-color;
-    text-decoration: none;
+.hero {
+  text-align: center;
+  padding-top: 10rem;
+  min-width: 300px;
+  height: 500px;
+  margin: auto auto;
+  h1 {
+    color: $react-heading-color;
+    font-size: 8rem;
   }
-}
-.site-list-description {
-  color: $site-list-description-color;
-  font-size: 14px;
+  h2 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+    color: white;
+    font-weight: lighter;
+  }
+  .btn {
+    font-size: 2rem;
+    margin: 3.5rem 0 0.5rem 0;
+  }
 }
 
 .footer {
@@ -146,10 +91,10 @@ body {
   display: block;
   padding: 1.7rem 0;
   a {
-    background: url('./images/adslot-media-logo-white.svg') no-repeat 0 0;
-    background-size: 95px;
-    width: 115px;
-    height: 20px;
+    background: url('./images/react-logo.svg') no-repeat 0 0;
+    background-size: 25px;
+    width: 45px;
+    height: 25px;
     display: block;
     margin: 0 auto;
   }
@@ -170,22 +115,4 @@ body {
   &:hover {
     color: $footer-nav-color;
   }
-}
-
-::-webkit-input-placeholder {
-    color: $placeholder-color;
-}
-:-moz-placeholder {
-   color: $placeholder-color;
-   opacity:  1;
-}
-::-moz-placeholder {
-   color: $placeholder-color;
-   opacity:  1;
-}
-:-ms-input-placeholder {
-   color: $placeholder-color;
-}
-:placeholder-shown {
-  color: $placeholder-color;
 }
