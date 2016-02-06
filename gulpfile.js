@@ -25,7 +25,7 @@ function bundle() {
     .transform(babelify, {presets: ['es2015', 'react']})
     .bundle()
     .on('error', gutil.log)
-    .pipe(source('main.js'))
+    .pipe(source('app.js'))
     .pipe(gulp.dest('./'))
 }
 bundler.on('update', bundle);
@@ -40,7 +40,7 @@ gulp.task('serve', function(done) {
       livereload: {
         enable: true,
         filter: function(filePath, cb) {
-          if(/main.js/.test(filePath)) {
+          if(/app.js/.test(filePath)) {
             cb(true)
           } else if(/style.css/.test(filePath)){
             cb(true)

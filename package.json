@@ -8,7 +8,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.1.0",
     "react": "^0.14.3",
     "react-dom": "^0.14.3"
   },
